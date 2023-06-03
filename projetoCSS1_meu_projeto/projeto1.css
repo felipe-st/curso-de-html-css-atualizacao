@@ -1,0 +1,20 @@
+header{
+    width: 100%;
+    height: 300px;
+    background-image: url(../projetoCSS1/projetoCSS-imagens/bg-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#menu{
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+#menu li{
+    display: inline-block;
+    background-color: rgb(187, 177, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
