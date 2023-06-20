@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit content</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 16px;
+            background-color: rgba(255,0,0,.5);
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{
+            width: fit-content;
+        }
+
+        .min-content .item{
+            width: min-content;
+        }
+
+        .max-content .item{
+            width: max-content;
+        }
+
+        .overflow-hidden{
+            overflow: hidden;
+        }
+
+        .overflow-scroll{
+            overflow: scroll;
+        }
+
+        .overflow-auto{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content overflow-hidden">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugiat.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe ipsum fugit architecto, unde a repellendus dolor earum fuga quis animi molestias quisquam! Iusto, officiis.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet, libero rerum dolor reiciendis dignissimos tempora deserunt tenetur assumenda ratione rem laudantium quas minus sint placeat facilis repellat aperiam id. Recusandae aperiam quibusdam alias incidunt officia ex non at quas hic atque nesciunt inventore labore optio quis sequi consectetur blanditiis vero doloremque dolorem, voluptatem cupiditate perspiciatis iure earum provident? Vero hic deserunt possimus soluta vitae debitis voluptates magni odit voluptatum excepturi, quisquam unde sunt pariatur.</div>
+    </div>
+
+    <div class="container min-content overflow-scroll">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugiat.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe ipsum fugit architecto, unde a repellendus dolor earum fuga quis animi molestias quisquam! Iusto, officiis.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet, libero rerum dolor reiciendis dignissimos tempora deserunt tenetur assumenda ratione rem laudantium quas minus sint placeat facilis repellat aperiam id. Recusandae aperiam quibusdam alias incidunt officia ex non at quas hic atque nesciunt inventore labore optio quis sequi consectetur blanditiis vero doloremque dolorem, voluptatem cupiditate perspiciatis iure earum provident? Vero hic deserunt possimus soluta vitae debitis voluptates magni odit voluptatum excepturi, quisquam unde sunt pariatur.</div>
+    </div>
+
+    <div class="container max-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugiat.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe ipsum fugit architecto, unde a repellendus dolor earum fuga quis animi molestias quisquam! Iusto, officiis.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet, libero rerum dolor reiciendis dignissimos tempora deserunt tenetur assumenda ratione rem laudantium quas minus sint placeat facilis repellat aperiam id. Recusandae aperiam quibusdam alias incidunt officia ex non at quas hic atque nesciunt inventore labore optio quis sequi consectetur blanditiis vero doloremque dolorem, voluptatem cupiditate perspiciatis iure earum provident? Vero hic deserunt possimus soluta vitae debitis voluptates magni odit voluptatum excepturi, quisquam unde sunt pariatur.</div>
+    </div>
+</body>
+
+</html>
